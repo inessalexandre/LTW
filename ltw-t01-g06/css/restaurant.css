@@ -1,0 +1,133 @@
+h1{
+  margin-top: 5%;
+  text-align: center;
+  color: rgba(15, 81, 81, 0.749);
+}
+h3{
+  white-space: normal;
+  margin-left: 1em;
+}
+section{
+    overflow-x:auto;
+    width:95%;
+    margin: auto;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+article{
+  margin-bottom: 1em;
+}
+#restaurants{
+  margin-top: 10%;
+}
+.row {
+  display: flex;
+
+}
+.top5Row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+    float: left;
+    min-width: 18%;
+    padding: 0 10px;
+    white-space: nowrap;
+    width: auto;
+  }
+.restaurantCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 1em;
+
+}
+.restaurantCard img{
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+.container{
+  padding-bottom: 1px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  color: rgba(15, 81, 81, 0.724);
+  
+}
+
+.container > *{
+  padding: 0.2em;
+  margin: 0;
+}
+.container .checked{
+  color: #E7B222; 
+}
+.price::after{
+  content: '€';
+  text-align: center;
+}
+.quantity, .score{
+  margin-right: 1em;
+}
+#dishes{
+  padding: 2em;
+
+}
+#dishes article{
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.322);
+  background-color: white;
+  border-radius: 20px;
+
+  padding: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto auto auto;
+}
+.price{
+  text-align: center;
+}
+.quantity, .score{
+  max-width: 3em;
+}
+.question-favorite input, .question-favoriteDish input{
+  display: none;
+}
+.formFavoriteDish{
+  margin-top: 1em;
+}
+.question-favoriteDish{
+
+  margin: 1em;
+}
+
+
+@media screen and (max-width: 750px) {
+
+  section {
+      overflow-x: hidden;
+      margin-top: 20%;
+      justify-content: center;
+      align-items: center;
+  }
+    .column {
+      width: 40%;
+      margin-bottom: 20px;
+    }
+    .row { 
+      display: block;
+    }
+
+    .restaurantCard img{
+      height: 18vw;
+    }
+    .container{
+      display:contents;
+    }
+  }
+

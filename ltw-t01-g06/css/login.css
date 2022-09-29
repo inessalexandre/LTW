@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Raleway:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(20, 81, 81, 0.518);
+}
+p{
+    margin: 0;
+}
+
+form{
+    height: 530px;
+    width: 400px;
+    background-color: #ffffff00;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(63, 63, 64, 0.6);
+    padding: 15px 35px;
+}
+form *{
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    border: none;
+    font-family: 'Lora', serif;
+}
+form h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    margin: auto;
+}
+
+form a{
+    font-weight: bold;
+    color:white;
+    text-shadow: 5px 3px 7px rgba(94, 93, 93, 0.521);
+}
+form a:hover{
+    color: #f9da85;
+}
+form img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    display: block;
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight: lighter;
+}
+input{
+    display: block;
+    height: 3.3em;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: lighter;
+    border-bottom: 1px solid white;
+    font-family: 'Raleway', sans-serif;
+}
+
+::placeholder{
+    color: #e8e8e8;
+}
+.question-owner{
+    font-size: 0.8em;
+    display: flex;
+    margin-top: 1em;
+}
+.question-owner input{
+    height: 1em;
+    width: 1em;
+    border-radius: 3px;
+    margin-left: 0.5em;
+
+}
+
+button{
+    margin-top: 0.3em;
+    width: 100%;
+    background-color: #ffffff;
+    color: rgba(15, 81, 81, 0.518);
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: background-color ease-out;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+    color: white;
+    border: 1px solid white;
+}
+
+#logInButton{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+#signInTitle{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

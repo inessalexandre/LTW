@@ -1,0 +1,16 @@
+#menu ul {
+    display: flex;
+    text-align: center;
+}
+
+#signup {
+    text-align: right;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+body {
+    grid-template-columns: auto 1fr;
+}
